@@ -1,0 +1,54 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456789",
+    "database": "moxd_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "AWS_ACCESS_KEY_ID" : "AKIAIJVRWF46IBOYKSWQ",
+		"AWS_SECRET_ACCESS_KEY" : "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",
+		"AWS_DEFAULT_REGION"  : "ap-southeast-1",
+		"AWS_BUCKET_S3_SUMMARY" : "moxd-media",
+    "dialectOptions": {
+      "timezone": "+06:30",
+      "dateStrings": true,
+      "typeCast": true
+    },
+    "timezone": "+06:30",
+    "operatorsAliases": "0",
+    "define": {
+      "timestamps": true
+    },
+    "pool": {
+      "max": 100,
+      "min": 0,
+      "idle": 200000,
+      "acquire": 1000000
+    },"log":{
+      "jwt_secret": "Auto-User",
+      "expiresIn": "1h",
+      "log_folder": "./log",
+      "upload_aws_folder":"documents/",
+      "upload_folder":"/routes/assets/upload",
+      "log_to_console": false,
+      "log_level": "verbose",
+      "version": 2.1,
+      "algorithm": "HS256" 
+   
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "moxd_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "moxd_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
